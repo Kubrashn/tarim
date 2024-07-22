@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'agac_site.wsgi.application'
+WSGI_APPLICATION = 'agac_site.wsgi.app'
 
 
 # Database
