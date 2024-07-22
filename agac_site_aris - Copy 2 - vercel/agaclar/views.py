@@ -19,13 +19,13 @@ import base64
 
 
 # Create your views here.
-def index(request):
+def agac_index(request):
     araziler = Arazi.objects.all()
     
     context = {
         'araziler':araziler
     }
-    return render(request , 'index.html' , context)
+    return render(request , 'agac_index.html' , context)
 
 def map_detay(request, arazi_id):
     arazi = get_object_or_404(Arazi, id=arazi_id)
@@ -150,9 +150,9 @@ def map(request):
     }
     return render(request, 'map.html', context)
 
-def ari_index(request):
+def index(request):
 
-    return render(request , 'ari_index.html')
+    return render(request , 'index.html')
 
 def agac_liste(request, arazi_id):
     arazi = Arazi.objects.get(id=arazi_id)

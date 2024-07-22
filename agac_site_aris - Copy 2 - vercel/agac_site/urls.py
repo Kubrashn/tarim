@@ -23,14 +23,14 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('agac_index/', index, name='index'),
+    path('', index, name='index'),
+    path('agac_index/', agac_index, name='agac_index'),
     path('map_detay/<uuid:arazi_id>/', map_detay, name='map_detay'), 
     path('map/', map, name='map'), 
     path('profile/<int:profile_id>/', profile, name='profile'),
     path('login/', giris, name='login'),
     path('logout/', cikis, name='logout'),
     path('medya/', medya, name='medya'),
-    path('', ari_index, name='ari_index'),
     path('agac_detay/<uuid:agac_id>/', agac_detay, name='agac_detay'),
     path('agac_liste/<uuid:arazi_id>/', agac_liste, name='agac_liste')
 ] 
