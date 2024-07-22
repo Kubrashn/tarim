@@ -4,16 +4,13 @@
       {
         "src": "agac_site/wsgi.py",
         "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "15mb",
-          "runtime": "python3.11"
-        }
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
       },
       {
         "src": "build_files.sh",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "static"
+          "distDir": "staticfiles"
         }
       }
     ],
@@ -24,8 +21,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/agac_site/wsgi.py"
+        "dest": "agac_site/wsgi.py"
       }
     ]
   }
-  
