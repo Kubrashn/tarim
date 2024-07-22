@@ -33,5 +33,7 @@ urlpatterns = [
     path('', ari_index, name='ari_index'),
     path('agac_detay/<uuid:agac_id>/', agac_detay, name='agac_detay'),
     path('agac_liste/<uuid:arazi_id>/', agac_liste, name='agac_liste')
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] 
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
