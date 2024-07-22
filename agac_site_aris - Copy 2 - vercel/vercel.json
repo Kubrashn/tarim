@@ -24,7 +24,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "agac_site/wsgi.py"
+        "dest": "/agac_site/wsgi.py"
       }
     ]
   }
