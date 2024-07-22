@@ -1,0 +1,154 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title %}
+  <title>Home</title>
+  {% endblock title %}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADxh-MsSxXj40FXn-7zNqOL-wO6sLgDt8&callback=initMap&libraries=&v=weekly"
+    defer></script>
+  {% block css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  {% endblock css %}  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  {% block header %}
+  <div class="header">
+    {% include "includes/_navbar.html" %}
+    <div class="agacust">
+      <img src="/static/img/agacustu1.webp" id="agacust" alt="">
+    </div>
+  </div>
+  {% endblock header %}
+
+
+  {% block content %}
+
+  {% if messages %}
+    {% for mesaj in messages %}
+    <div class="alert alert-{{mesaj.tags}} text-center" id="alerttt"  style="margin-top: 70px;">
+        {{mesaj}}
+    </div>
+    {% endfor %}
+    {% else %}
+    {% endif %}
+    
+    <div class="container">
+      <div class="anabaslik mt-5">
+        <div class="row">
+          <h1 class="d-flex justify-content-center">Tarımda AR GE</h3>
+        </div>
+        <div class="row mt-3">
+          <h2 class="d-flex justify-content-center">Smart Monitoring of Fruit Trees</h4>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="neyapiyoruz">
+          <div class="container">
+            <div class="col-6">
+              <h3>Neler Yapiyoruz?</h3>
+            </div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+          </div>
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-6">
+                <img src="/static/img/Screenshot 2024-07-21 155752.png" class="mt-5" alt="">
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="row">
+              <h4>sdlkgnsklg</h4>
+            </div>
+          </div>
+      
+      
+    
+    
+  {% endblock content %}
+
+  {% comment %} {% include "includes/_footer.html" %} {% endcomment %}
+
+
+  <script>
+    function sortTable() {
+
+      const tableBody = document.getElementById('arsalartablo');
+      const rows = Array.from(tableBody.getElementsByTagName('tr'));
+
+      rows.sort((a, b) => {
+        const cellA = a.querySelector('.arsalar').getAttribute('data-isim').toLowerCase();
+        const cellB = b.querySelector('.arsalar').getAttribute('data-isim').toLowerCase();
+        return cellA.localeCompare(cellB);
+      });
+
+      rows.forEach(row => tableBody.appendChild(row));
+      window.onload = sortTable;
+      console.log(rows)
+    }
+
+    document.getElementById("siralama").addEventListener("click", sortTable);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="/static/js/app.js"></script>
+
+</body>
+
+</html>

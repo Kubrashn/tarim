@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Placemark id="3">
+            <name>IMG_3354</name>
+            <Point id="2">
+                <coordinates>27.448531°E ,37.996092°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="5">
+            <name>IMG_3355</name>
+            <Point id="4">
+                <coordinates>27.448538°E,37.996092°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="7">
+            <name>IMG_3353</name>
+            <Point id="6">
+                <coordinates>27.448564°E, 37.996095°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="9">
+            <name>IMG_3356</name>
+            <Point id="8">
+                <coordinates>27.448509°E, 37.996086°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <name>IMG_3357</name>
+            <Point id="10">
+                <coordinates>27.448482°E,37.996068°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>IMG_3358</name>
+            <Point id="12">
+                <coordinates>27.448498°E,37.996021°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <name>IMG_3359</name>
+            <Point id="14">
+                <coordinates>27.448550°E,37.995989°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>IMG_3360</name>
+            <Point id="16">
+                <coordinates>27.448582°E,37.995990°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>IMG_3361</name>
+            <Point id="18">
+                <coordinates>27.448588°E,37.995984°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>IMG_3362</name>
+            <Point id="20">
+                <coordinates>27.448642°E,37.995976°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>IMG_3363</name>
+            <Point id="22">
+                <coordinates>27.4486829E,37.996001°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="25">
+            <name>IMG_3364</name>
+            <Point id="24">
+                <coordinates>27.448675°E ,37.995945°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="27">
+            <name>IMG_3365</name>
+            <Point id="26">
+                <coordinates>27.448669°E,37.995895°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="29">
+            <name>IMG_3366</name>
+            <Point id="28">
+                <coordinates>27.448703°E,37.995888°N,0.0</coordinates>
+            </Point>
+        </Placemark>
+        </Document>
+</kml>

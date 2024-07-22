@@ -1,0 +1,48 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}
+<title>Ağaç Listesi</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>{{ arazi.isim }} Arazisinin Ağaçları</h3>
+            <table class="table table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <th>Resim</th>
+                        <th>Özellikler</th>
+                        <th>QR Kod</th>
+                        <th>Detay</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for agac in agaclar %}
+                    <tr>
+                        <td>
+                            {% if agac.aimage %}
+                                <img src="{{ agac.aimage.url }}" alt="Ağaç Resmi" class="img-thumbnail" width="100">
+                            {% else %}
+                                <img src="{% static 'img/default_tree.jpg' %}" alt="Varsayılan Ağaç Resmi" class="img-thumbnail" width="100">
+                            {% endif %}
+                        </td>
+                        <td>{{ agac.ozellik }}</td>
+                        <td>
+                            {% if agac.qr_code %}
+                                <img src="{{ agac.qr_code.url }}" alt="QR Kod" class="img-thumbnail" width="100">
+                            {% else %}
+                                <span>QR Kodu Yok</span>
+                            {% endif %}
+                        </td>
+                        <td><a href="{% url 'agac_detay' agac.id %}" class="btn btn-primary">Detay</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock content %}
